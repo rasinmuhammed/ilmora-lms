@@ -1,9 +1,11 @@
-import React from 'react'
+import { PricingTable } from "@clerk/nextjs"
 
-const page = () => {
+const Subscription = () => {
   return (
-    <div>page</div>
+    <div>
+        <PricingTable />
+    </div>
   )
 }
 
-export default page
+export default Subscription
