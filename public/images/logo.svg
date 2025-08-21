@@ -11,7 +11,7 @@
       <stop offset="100%" stop-color="#1E3A8A"/> <!-- indigo -->
     </linearGradient>
 
-    <!-- Soft glow for subtle contrast on black (optional, keeps it crisp) -->
+    <!-- Soft glow -->
     <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge>
@@ -21,29 +21,21 @@
     </filter>
   </defs>
 
-  <!-- Icon group (book + crescent + star) -->
-  <g transform="translate(600,330)" filter="none">
-    <!-- Book (simple stylized open-book path) -->
+  <!-- Icon group (book + crescent + star), scaled up -->
+  <g transform="translate(600,600) scale(1.5)" filter="none">
+    <!-- Book -->
     <path d="M-360,170 C-260,40 -140,40 -10,170 
              C-120,120 -240,130 -360,170 Z
              M10,170 C140,40 260,40 360,170 
              C240,120 120,130 10,170 Z"
           fill="url(#grad-violet-indigo)"/>
 
-    <!-- Crescent (drawn with two circles; the smaller circle is black to cut out shape) -->
+    <!-- Crescent -->
     <circle cx="0" cy="-70" r="140" fill="url(#grad-violet-indigo)"/>
     <circle cx="40" cy="-60" r="100" fill="#000000"/>
 
-    <!-- Four-point star -->
+    <!-- Star -->
     <polygon points="95,-160 105,-145 120,-140 105,-135 95,-120 90,-135 75,-140 90,-145"
              fill="url(#grad-violet-indigo)"/>
   </g>
-
-  <!-- Logotype -->
-  <text x="50%" y="900" text-anchor="middle"
-        font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
-        font-weight="700" font-size="220"
-        fill="url(#grad-violet-indigo)" letter-spacing="-2">
-    ilmora
-  </text>
 </svg>
